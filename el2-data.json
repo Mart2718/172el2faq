@@ -1,0 +1,178 @@
+{
+  "section": "EL2",
+  "title": "Graphs of Exponential Functions",
+  "learningObjective": "Graph exponential functions and determine the domain, range, and asymptotes.",
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "conceptual",
+      "question": "What does the basic graph of an exponential function look like, and why does it always increase or always decrease (never both)?",
+      "answer": "The parent exponential graph is a smooth curve that's either always climbing (growth, when b &gt; 1) or always falling (decay, when 0 &lt; b &lt; 1) — never both on the same graph. This is because multiplying by the same factor b every step can only push the output consistently up or consistently down; there's no mechanism for the curve to turn around and reverse direction like a parabola does.<div class=\"graph-wrap\"><svg viewBox=\"0 0 260 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"0\" y1=\"190\" x2=\"260\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"140\" y1=\"10\" x2=\"140\" y2=\"210\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><polyline points=\"0.0,187.8 13.1,187.2 26.1,186.5 39.2,185.6 52.2,184.5 65.3,183.2 78.3,181.4 91.4,179.2 104.4,176.5 117.5,173.1 130.5,168.8 143.6,163.4 156.6,156.6 169.7,148.2 182.7,137.6 195.8,124.3 208.8,107.6 221.9,86.7 234.9,60.4 248.0,27.5\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><circle cx=\"140\" cy=\"165\" r=\"5\" fill=\"#D4622A\"/><text x=\"148\" y=\"162\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"600\">(0, 1)</text></svg></div><p class=\"graph-caption\">f(x) = 2^x always climbs — there's no turning point, unlike a parabola.</p>"
+    },
+    {
+      "id": "faq-2",
+      "category": "conceptual",
+      "question": "What is a horizontal asymptote, and why does f(x) = b^x have one at y = 0?",
+      "answer": "A horizontal asymptote is a horizontal line that a graph gets closer and closer to, without ever actually touching or crossing it. For f(x) = b^x, as x becomes very negative, b^x gets closer and closer to 0 — but no matter how negative x gets, b raised to any real power is never exactly 0. That's exactly the asymptote behavior: the curve hugs the line y = 0 forever without touching it.<div class=\"graph-wrap\"><svg viewBox=\"0 0 260 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"0\" y1=\"190\" x2=\"260\" y2=\"190\" stroke=\"#D4622A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><polyline points=\"0.0,187.8 13.1,187.2 26.1,186.5 39.2,185.6 52.2,184.5 65.3,183.2 78.3,181.4 91.4,179.2 104.4,176.5 117.5,173.1 130.5,168.8 143.6,163.4 156.6,156.6 169.7,148.2 182.7,137.6 195.8,124.3 208.8,107.6 221.9,86.7 234.9,60.4 248.0,27.5\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><text x=\"5\" y=\"205\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"700\">asymptote: y = 0</text></svg></div><p class=\"graph-caption\">The curve hugs y = 0 on the left forever, but never quite touches it.</p>"
+    },
+    {
+      "id": "faq-3",
+      "category": "conceptual",
+      "question": "Why does an exponential function never have a vertical asymptote?",
+      "answer": "A vertical asymptote happens when a function is undefined at some x-value (like division by zero in a rational function). But b^x is defined for every single real number x — there's no input that breaks the expression. Since there's no forbidden x-value, there's nothing for a vertical asymptote to attach to."
+    },
+    {
+      "id": "faq-4",
+      "category": "conceptual",
+      "question": "What is the domain and range of the parent exponential function f(x) = b^x?",
+      "answer": "The domain is all real numbers, (−∞, ∞) — you can raise b to any power at all. The range is (0, ∞) — the output is always positive and can get arbitrarily large or arbitrarily close to zero, but it can never actually reach zero or go negative, since the asymptote at y = 0 is a boundary the graph never crosses."
+    },
+    {
+      "id": "faq-5",
+      "category": "conceptual",
+      "question": "What are the y-intercept and x-intercept of the parent exponential function, and why is there no x-intercept?",
+      "answer": "The y-intercept is always (0, 1), since any nonzero base raised to the power 0 equals 1. There is no x-intercept, because an x-intercept would require the output to equal exactly 0 — but as faq-4 established, the range of an exponential function never includes 0."
+    },
+    {
+      "id": "faq-6",
+      "category": "sticking-points",
+      "question": "How do transformations from FN4 apply to graphing exponential functions?",
+      "answer": "Every transformation rule from FN4 — vertical shift, horizontal shift, vertical reflection, horizontal reflection, and stretches — applies to exponential functions exactly the same way it applied to any other function. Nothing new to learn here mechanically; the only new part is tracking what each transformation does to the asymptote, domain, and range, which is specific to exponential functions (see faq-7 through faq-10)."
+    },
+    {
+      "id": "faq-7",
+      "category": "sticking-points",
+      "question": "How does a vertical shift affect the asymptote, domain, and range of an exponential function?",
+      "answer": "A vertical shift moves the asymptote by exactly the same amount as the shift, since the whole graph — including the line it hugs — moves together. The domain stays all real numbers, but the range shifts along with the asymptote.<div class=\"graph-wrap\"><svg viewBox=\"0 0 240 230\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"0\" y1=\"210\" x2=\"240\" y2=\"210\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><line x1=\"0\" y1=\"160\" x2=\"240\" y2=\"160\" stroke=\"#D4622A\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><polyline points=\"0.0,207.8 12.2,207.3 24.4,206.6 36.6,205.8 48.8,204.8 61.1,203.6 73.3,202.1 85.5,200.3 97.7,198.0 109.9,195.2 122.1,191.7 134.3,187.3 146.5,182.0 158.7,175.4 170.9,167.3 183.2,157.2 195.4,144.7 207.6,129.4 219.8,110.4 232.0,86.9\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"0.0,157.8 11.6,157.3 23.2,156.7 34.7,156.0 46.3,155.1 57.9,154.0 69.5,152.6 81.1,151.0 92.6,149.0 104.2,146.6 115.8,143.6 127.4,139.9 138.9,135.5 150.5,130.0 162.1,123.3 173.7,115.2 185.3,105.2 196.8,93.1 208.4,78.2 220.0,60.0\" fill=\"none\" stroke=\"#D4622A\" stroke-width=\"3\"/><text x=\"5\" y=\"225\" font-size=\"10\" fill=\"#4a4a5a\">f(x) = 2^x, asymptote y=0</text><text x=\"5\" y=\"20\" font-size=\"10\" fill=\"#D4622A\" font-weight=\"600\">g(x) = 2^x + 2, asymptote y=2</text></svg></div><p class=\"graph-caption\">Shifting up 2 moves the whole graph AND its asymptote up 2 — range becomes (2, ∞).</p>"
+    },
+    {
+      "id": "faq-8",
+      "category": "sticking-points",
+      "question": "How does a horizontal shift affect the asymptote, domain, and range of an exponential function?",
+      "answer": "A horizontal shift doesn't touch the asymptote, domain, or range at all — since the asymptote y = 0 is a horizontal line, sliding the graph left or right doesn't change its height. The graph just slides sideways along that same unchanged horizontal boundary. Only the y-intercept and the graph's horizontal position change."
+    },
+    {
+      "id": "faq-9",
+      "category": "sticking-points",
+      "question": "How does a vertical reflection affect the range of an exponential function?",
+      "answer": "A vertical reflection (g(x) = −b^x) flips the entire graph upside down across the x-axis, which flips the range from positive to negative: instead of (0, ∞), the range becomes (−∞, 0). The asymptote stays at y = 0 either way, since reflecting a line that sits exactly on the x-axis doesn't move it."
+    },
+    {
+      "id": "faq-10",
+      "category": "sticking-points",
+      "question": "How does a horizontal reflection affect the appearance of growth versus decay?",
+      "answer": "A horizontal reflection (h(x) = b^(−x)) flips the graph left-to-right, which visually swaps how the graph looks: a growth-shaped curve (b &gt; 1) reflected horizontally looks exactly like a decay curve, and vice versa. The asymptote, domain, and range are all unaffected, since none of those depend on horizontal direction.<div class=\"graph-wrap\"><svg viewBox=\"0 0 340 210\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"190\" x2=\"320\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><polyline points=\"50.0,187.5 62.2,186.9 74.4,186.2 86.6,185.3 98.8,184.2 111.1,182.8 123.3,181.1 135.5,179.0 147.7,176.4 159.9,173.2 172.1,169.3 184.3,164.4 196.5,158.3 208.7,150.9 220.9,141.6 233.2,130.2 245.4,116.2 257.6,98.8 269.8,77.3 282.0,50.7\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"282.0,50.7 269.8,77.3 257.6,98.8 245.4,116.2 233.2,130.2 220.9,141.6 208.7,150.9 196.5,158.3 184.3,164.4 172.1,169.3 159.9,173.2 147.7,176.4 135.5,179.0 123.3,181.1 111.1,182.8 98.8,184.2 86.6,185.3 74.4,186.2 62.2,186.9 50.0,187.5\" fill=\"none\" stroke=\"#D4622A\" stroke-width=\"3\"/><text x=\"235\" y=\"45\" font-size=\"11\" fill=\"#0a3f52\" font-weight=\"600\">f(x) = 2^x</text><text x=\"55\" y=\"45\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"600\">h(x) = 2&minus;x</text></svg></div><p class=\"graph-caption\">Mirror images of each other across the y-axis — same asymptote, same range, opposite direction.</p>"
+    },
+    {
+      "id": "faq-11",
+      "category": "sticking-points",
+      "question": "How do I find the domain, range, and asymptote of a transformed exponential function like g(x) = 4^x + 1 or h(x) = 4^(−x)?",
+      "answer": "The domain is always (−∞, ∞) no matter what — transformations never change this for an exponential function. For the asymptote, start from y = 0 and apply only the vertical shift (ignore horizontal shifts, reflections, and stretches — none of those affect the asymptote's height). The range then follows directly from the asymptote and the direction the graph opens.<div class=\"example-box\"><div class=\"label\">Worked Examples</div><p class=\"math-line\">\\( g(x) = 4^x + 1 \\): vertical shift up 1 &rarr; asymptote \\( y=1 \\), range \\( (1,\\infty) \\), domain \\( (-\\infty,\\infty) \\)</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">\\( h(x) = 4^{-x} \\): horizontal reflection only, no vertical shift &rarr; asymptote \\( y=0 \\), range \\( (0,\\infty) \\), domain \\( (-\\infty,\\infty) \\)</p></div>"
+    },
+    {
+      "id": "faq-12",
+      "category": "sticking-points",
+      "question": "How do I graph a transformed exponential function without plotting a full table of points?",
+      "answer": "Start by sketching the parent curve's basic shape and its two anchor features: the asymptote and the y-intercept (0, 1). Apply each transformation to those two anchors first — shift the asymptote line, shift or reflect the point — then redraw the same overall curve shape relative to the new anchors. This is much faster than recalculating an entire table of outputs from scratch."
+    },
+    {
+      "id": "faq-13",
+      "category": "connections",
+      "question": "How does this section connect to FN4 and to EL1?",
+      "answer": "This section is really FN4's transformation rules and EL1's exponential function definition, combined. EL1 gave you the algebraic rule (f(x) = ab^x) and taught you to evaluate it; FN4 gave you the general transformation toolkit (shifts, reflections, stretches); this section applies FN4's toolkit specifically to EL1's function family, with one exponential-specific twist: tracking what happens to the asymptote alongside the domain and range."
+    },
+    {
+      "id": "faq-14",
+      "category": "connections",
+      "question": "Why do asymptotes matter beyond exponential functions?",
+      "answer": "Asymptotes describe long-run behavior — what a function does as its input grows extremely large or extremely negative — which is a central idea throughout the rest of precalculus and into calculus. Rational functions have both vertical and horizontal asymptotes for different reasons than exponential functions do, and understanding the exponential case first (a clean, single horizontal asymptote with no exceptions) builds the intuition you'll need for the more complicated asymptote behavior coming up in rational functions."
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Graph Exponential Functions",
+      "url": "https://www.youtube.com/watch?v=7fpazNs1ZRE",
+      "description": "A full worked example finding domain, range, and horizontal asymptote for a transformed exponential function involving base e.",
+      "category": "parent-graph",
+      "relatedFaqs": [
+        "faq-1",
+        "faq-2",
+        "faq-4",
+        "faq-11"
+      ]
+    },
+    {
+      "id": "vid-2",
+      "title": "Find the Equation of a Transformed Exponential Function From a Graph",
+      "url": "https://www.youtube.com/watch?v=12LDAqnsH_w",
+      "description": "Working backward from a graph — reading the shifts and reflections to write the equation of a transformed exponential function.",
+      "category": "transformations",
+      "relatedFaqs": [
+        "faq-7",
+        "faq-8",
+        "faq-11"
+      ]
+    },
+    {
+      "id": "vid-3",
+      "title": "Equations of a Transformed Exponential Function (4 Examples)",
+      "url": "https://www.youtube.com/watch?v=bhGXeSiwnf4",
+      "description": "Four worked examples determining the equation of a transformed exponential function from given transformation information.",
+      "category": "transformations",
+      "relatedFaqs": [
+        "faq-6",
+        "faq-11"
+      ]
+    },
+    {
+      "id": "vid-4",
+      "title": "Match the Graphs of Translated Exponential Functions to Equations",
+      "url": "https://youtu.be/phYxEeJ7ZW4",
+      "description": "Practice matching transformed exponential graphs to their correct equations, reinforcing shift and asymptote recognition.",
+      "category": "transformations",
+      "relatedFaqs": [
+        "faq-7",
+        "faq-9",
+        "faq-10"
+      ]
+    }
+  ],
+  "apps": [],
+  "prompts": {
+    "guided": [
+      {
+        "id": "prompt-1",
+        "title": "Understand Why the Asymptote Exists",
+        "prompt": "I'm learning why f(x) = b^x has a horizontal asymptote at y = 0. Can you walk me through why the output gets closer and closer to zero as x becomes very negative, but never actually reaches zero? Use specific numbers to show me the pattern."
+      },
+      {
+        "id": "prompt-2",
+        "title": "Practice Tracking the Asymptote Through Transformations",
+        "prompt": "I'm learning how different transformations affect the asymptote of an exponential function. Give me a transformed exponential equation and ask me to identify the asymptote, domain, and range step by step — first checking for a vertical shift, then figuring out the rest. Give me several more examples of increasing difficulty and check my work."
+      },
+      {
+        "id": "prompt-3",
+        "title": "Distinguish Horizontal vs. Vertical Shift Effects",
+        "prompt": "I keep mixing up which transformations affect the asymptote and which don't. Can you quiz me with several transformed exponential equations, some with only horizontal shifts and some with only vertical shifts, and ask me to predict the asymptote before I calculate it? Help me build a reliable way to tell them apart."
+      },
+      {
+        "id": "prompt-4",
+        "title": "Practice Graphing from Key Features",
+        "prompt": "I'm learning to graph a transformed exponential function using its asymptote and y-intercept as anchor points instead of a full table of values. Give me a transformed equation and walk me through finding those two anchors, then sketching the graph. Give me more practice and check my sketches by describing what they should look like."
+      },
+      {
+        "id": "prompt-5",
+        "title": "Connect This to FN4 and EL1",
+        "prompt": "I've learned function transformations in FN4 and exponential function basics in EL1, and now I'm combining them in EL2. Can you help me see this whole arc as one connected story — how does understanding transformations in general (FN4) plus knowing what an exponential function is (EL1) lead directly to being able to analyze any transformed exponential graph (EL2)?"
+      }
+    ],
+    "open": [
+      {
+        "id": "open-1",
+        "title": "Create Your Own",
+        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section EL2 (Graphs of Exponential Functions). Ask the AI to help you explore that idea. Share what you learned and what surprised you."
+      }
+    ]
+  }
+}
