@@ -91,9 +91,9 @@
   "videos": [
     {
       "id": "vid-1",
-      "title": "Graph Exponential Functions",
-      "url": "https://www.youtube.com/watch?v=7fpazNs1ZRE",
-      "description": "A full worked example finding domain, range, and horizontal asymptote for a transformed exponential function involving base e.",
+      "title": "Graphing Basic Exponential Functions: Growth and Decay",
+      "url": "https://youtu.be/zsczJpEWR9o",
+      "description": "Graphing basic exponential functions by plotting points, for both growth (b > 1) and decay (0 < b < 1), and seeing the horizontal asymptote y = 0.",
       "category": "parent-graph",
       "relatedFaqs": [
         "faq-1",
