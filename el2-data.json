@@ -19,7 +19,7 @@
       "id": "faq-3",
       "category": "conceptual",
       "question": "Why does an exponential function never have a vertical asymptote?",
-      "answer": "A vertical asymptote can only occur at an x-value where a function is undefined (like a zero denominator in a rational function), though not every such x-value gives one. But \\( b^x \\) is defined for every single real number x — there's no input that breaks the expression. Since there's no forbidden x-value, there's nothing for a vertical asymptote to attach to."
+      "answer": "A vertical asymptote is an x-value where the outputs grow without bound as the inputs get close to it. Exponential functions never do that: they are continuous and finite at every real input. As x approaches any finite number a, \\( b^x \\) approaches the finite value \\( b^a \\), so there is no vertical asymptote. (In PR7, rational functions had vertical asymptotes at some zeros of the denominator, where the outputs blow up; nothing like that happens with \\( b^x \\).)"
     },
     {
       "id": "faq-4",
@@ -85,7 +85,7 @@
       "id": "faq-14",
       "category": "connections",
       "question": "Why do asymptotes matter beyond exponential functions?",
-      "answer": "Asymptotes describe long-run behavior: what a function does as its input grows very large or very negative. That idea runs through the rest of precalculus and into calculus, where it becomes the idea of a limit. You met asymptotes with rational functions in PR7, where a graph can have vertical asymptotes (at some zeros of the denominator) and a horizontal asymptote that the graph may even cross. Exponential functions are the clean case: exactly one horizontal asymptote, approached on one side only, never crossed, and no vertical asymptote. The same pattern shows up again for logarithms, where the asymptote turns vertical."
+      "answer": "Horizontal asymptotes describe what a function approaches as its input grows very large or very negative. Vertical asymptotes describe unbounded behavior near a particular input. That idea runs through the rest of precalculus and into calculus, where it becomes the idea of a limit. You met asymptotes with rational functions in PR7, where a graph can have vertical asymptotes (at some zeros of the denominator) and a horizontal asymptote that the graph may even cross. Exponential functions are the clean case: exactly one horizontal asymptote, approached on one side only, never crossed, and no vertical asymptote. The same pattern shows up again for logarithms, where the asymptote turns vertical."
     }
   ],
   "videos": [
@@ -171,7 +171,7 @@
       {
         "id": "open-1",
         "title": "Create Your Own",
-        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section EL2 (Graphs of Exponential Functions). Ask the AI to help you explore that idea. Share what you learned and what surprised you."
+        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section EL2 (Graphs of Exponential Functions). Ask the AI to question you instead of explaining. Before you trust an answer, check one claim using a table, your notes, or direct substitution, and write down what you checked and what you found. Share what you learned and what surprised you."
       }
     ]
   },
